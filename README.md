@@ -8,7 +8,7 @@ CoreUI is meant to be the UX game changer. Pure & transparent code is devoid of 
 * [Installation](#installation)
 * [Database](#database)
 * [Penggunaan](#penggunaan)
-* [Rest API](#rest-api)
+* [Routes](#routes)
 
 
 ## Installation
@@ -45,12 +45,26 @@ port: 3306
 
 ```
 
+Migrasi awal untuk initial data:
+
+1. install driver golang migrate
+```
+$ go install -tags 'mysql' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+```
+
+2. perintah untuk migration :
+```
+$ cd backend
+$ migrate -database mysql://testuser:tes12345@tcp(localhost:3306)/testdb?query -path migration up
+```
+
 
 ### Penggunaan
 
 Untuk backend start server dengan
 ``` bash
 # development server
+$ cd backend
 $ go run .
 ```
 
@@ -59,6 +73,7 @@ Coba lihat ke [http://localhost:3333](http://localhost:3333). Ini adalah endpoin
 Untuk frontend start server dengan
 ``` bash
 # development server
+$ cd frontend
 $ yarn start
 ```
 
@@ -70,6 +85,7 @@ Run `build` untuk build backend.
 
 ```bash
 # build for production with minification
+$ cd backend
 $ go run build
 ```
 
@@ -77,6 +93,64 @@ Run `build` untuk build frontend. Build file akan tersimpan di `build/` director
 
 ```bash
 # build for production with minification
+$ cd frontend
 $ yarn build
 ```
 
+## Routes
+
+<details>
+<summary>`/article`</summary>
+
+- [(*Cors).Handler-fm]()
+- [RequestID]()
+- [Logger]()
+- [Recoverer]()
+- [URLFormat]()
+- [SetContentType.func1]()
+- **/article**
+	- **/**
+		- _GET_
+			- [ListArticles]()
+		- _POST_
+			- [CreateArticle]()
+
+</details>
+<details>
+<summary>`/article/{articleID}`</summary>
+
+- [(*Cors).Handler-fm]()
+- [RequestID]()
+- [Logger]()
+- [Recoverer]()
+- [URLFormat]()
+- [SetContentType.func1]()
+- **/article**
+	- **/{articleID}**
+		- [ArticleCtx]()
+		- **/**
+			- _DELETE_
+				- [DeleteArticle]()
+			- _GET_
+				- [GetArticle]()
+			- _PUT_
+				- [UpdateArticle]()
+
+</details>
+<details>
+<summary>`/article/{limit}/{offset}`</summary>
+
+- [(*Cors).Handler-fm]()
+- [RequestID]()
+- [Logger]()
+- [Recoverer]()
+- [URLFormat]()
+- [SetContentType.func1]()
+- **/article**
+	- **/{limit}/{offset}**
+		- _GET_
+			- [ListArticlesWithPage]()
+
+</details>
+
+Total # of routes: 3

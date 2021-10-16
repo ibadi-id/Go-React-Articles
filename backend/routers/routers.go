@@ -52,14 +52,13 @@ func ApiRouter() {
 	r.Route("/article", func(r chi.Router) {
 		r.Get("/", actions.ListArticles)
 		r.Get("/{limit}/{offset}", actions.ListArticlesWithPage)
-		r.Post("/", actions.CreateArticle)       // POST /articles
-		// r.Get("/search", actions.SearchArticles) // GET /articles/search
+		r.Post("/", actions.CreateArticle)       // POST /article
 
 		r.Route("/{articleID}", func(r chi.Router) {
 			r.Use(actions.ArticleCtx)            // Load the *Article on the request context
-			r.Get("/", actions.GetArticle)       // GET /articles/123
-			r.Put("/", actions.UpdateArticle)    // PUT /articles/123
-			r.Delete("/", actions.DeleteArticle) // DELETE /articles/123
+			r.Get("/", actions.GetArticle)       // GET /article/123
+			r.Put("/", actions.UpdateArticle)    // PUT /article/123
+			r.Delete("/", actions.DeleteArticle) // DELETE /article/123
 		})
 	})
 
