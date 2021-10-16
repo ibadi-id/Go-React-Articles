@@ -2,6 +2,13 @@
   "router": {
     "middlewares": [
       {
+        "pkg": "github.com/go-chi/cors",
+        "func": "(*Cors).Handler-fm",
+        "comment": "Handler apply the CORS specification on the request, and add relevant CORS headers\nas necessary.\n",
+        "file": "C:/Users/smith/go/pkg/mod/github.com/go-chi/cors@v1.2.0/cors.go",
+        "line": 211
+      },
+      {
         "pkg": "github.com/go-chi/chi/v5/middleware",
         "func": "RequestID",
         "comment": "RequestID is a middleware that injects a request ID into the context of each\nrequest. A request ID is a string of the form \"host.example.com/random-0001\",\nwhere \"random\" is a base62 random string that uniquely identifies this go\nprocess, and where the last number is an atomically incremented request\ncounter.\n",
@@ -50,18 +57,18 @@
                   "method": "GET",
                   "pkg": "github.com/ibadi-id/article-test/actions",
                   "func": "ListArticles",
-                  "comment": "",
-                  "file": "F:/SHARING VISION/test/actions/actions.go",
-                  "line": 13
+                  "comment": "ListArticles adalah fungsi untuk menampilkan semua Article\n",
+                  "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                  "line": 16
                 },
                 "POST": {
                   "middlewares": [],
                   "method": "POST",
                   "pkg": "github.com/ibadi-id/article-test/actions",
                   "func": "CreateArticle",
-                  "comment": "CreateArticle persists the posted Article and returns it\n",
-                  "file": "F:/SHARING VISION/test/actions/actions.go",
-                  "line": 88
+                  "comment": "CreateArticle adalah fungsi untuk persists article baru dan mengembalikannya\n",
+                  "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                  "line": 95
                 }
               }
             },
@@ -71,9 +78,9 @@
                   {
                     "pkg": "github.com/ibadi-id/article-test/actions",
                     "func": "ArticleCtx",
-                    "comment": "ArticleCtx middleware is used to load an Article object from\nthe URL parameters passed through as the request. In case\nthe Article could not be found, we stop here and return a 404.\n",
-                    "file": "F:/SHARING VISION/test/actions/actions.go",
-                    "line": 62
+                    "comment": "ArticleCtx middleware untuk load context \"article\" pada request\n",
+                    "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                    "line": 69
                   }
                 ],
                 "routes": {
@@ -84,27 +91,27 @@
                         "method": "DELETE",
                         "pkg": "github.com/ibadi-id/article-test/actions",
                         "func": "DeleteArticle",
-                        "comment": "DeleteArticle removes an existing Article from our persistent store.\n",
-                        "file": "F:/SHARING VISION/test/actions/actions.go",
-                        "line": 131
+                        "comment": "DeleteArticle adalah fungsi untuk hapus article by id\n",
+                        "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                        "line": 138
                       },
                       "GET": {
                         "middlewares": [],
                         "method": "GET",
                         "pkg": "github.com/ibadi-id/article-test/actions",
                         "func": "GetArticle",
-                        "comment": "GetArticle returns the specific Article. You'll notice it just\n",
-                        "file": "F:/SHARING VISION/test/actions/actions.go",
-                        "line": 105
+                        "comment": "GetArticle fungsi untuk mengembalikan spesifik article (default by id, bisa dikembangkan by slug)\n",
+                        "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                        "line": 112
                       },
                       "PUT": {
                         "middlewares": [],
                         "method": "PUT",
                         "pkg": "github.com/ibadi-id/article-test/actions",
                         "func": "UpdateArticle",
-                        "comment": "UpdateArticle updates an existing Article in our persistent store.\n",
-                        "file": "F:/SHARING VISION/test/actions/actions.go",
-                        "line": 116
+                        "comment": "UpdateArticle fungsi untuk updates Article dan mengembalikannya\n",
+                        "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                        "line": 123
                       }
                     }
                   }
@@ -117,10 +124,10 @@
                   "middlewares": [],
                   "method": "GET",
                   "pkg": "github.com/ibadi-id/article-test/actions",
-                  "func": "ListArticles",
-                  "comment": "",
-                  "file": "F:/SHARING VISION/test/actions/actions.go",
-                  "line": 13
+                  "func": "ListArticlesWithPage",
+                  "comment": "ListArticlesWithPage adalah fungsi untuk menampilkan article dengan pagination\n",
+                  "file": "F:/SHARING VISION/test/backend/actions/actions.go",
+                  "line": 34
                 }
               }
             }

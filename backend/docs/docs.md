@@ -7,6 +7,7 @@ Welcome to the article-test/rest generated docs.
 <details>
 <summary>`/article`</summary>
 
+- [(*Cors).Handler-fm]()
 - [RequestID]()
 - [Logger]()
 - [Recoverer]()
@@ -23,6 +24,7 @@ Welcome to the article-test/rest generated docs.
 <details>
 <summary>`/article/{articleID}`</summary>
 
+- [(*Cors).Handler-fm]()
 - [RequestID]()
 - [Logger]()
 - [Recoverer]()
@@ -32,17 +34,18 @@ Welcome to the article-test/rest generated docs.
 	- **/{articleID}**
 		- [ArticleCtx]()
 		- **/**
-			- _PUT_
-				- [UpdateArticle]()
 			- _DELETE_
 				- [DeleteArticle]()
 			- _GET_
 				- [GetArticle]()
+			- _PUT_
+				- [UpdateArticle]()
 
 </details>
 <details>
 <summary>`/article/{limit}/{offset}`</summary>
 
+- [(*Cors).Handler-fm]()
 - [RequestID]()
 - [Logger]()
 - [Recoverer]()
@@ -51,7 +54,7 @@ Welcome to the article-test/rest generated docs.
 - **/article**
 	- **/{limit}/{offset}**
 		- _GET_
-			- [ListArticles]()
+			- [ListArticlesWithPage]()
 
 </details>
 

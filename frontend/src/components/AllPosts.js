@@ -103,7 +103,7 @@ function AllPosts() {
                           <CIcon name="cil-pencil" />
                         </CButton>
                       </Link>
-                      <CButton role="tab" aria-selected="true" aria-controls="trash-tab" color="danger" onClick={()=>trashArticles(item)}>
+                      <CButton className="ml-2" role="tab" aria-selected="true" aria-controls="trash-tab" color="danger" onClick={()=>trashArticles(item)}>
                         <CIcon name="cil-trash" />
                       </CButton>
                     </td>
@@ -140,7 +140,7 @@ function AllPosts() {
                           <CIcon name="cil-pencil" />
                         </CButton>
                       </Link>
-                      <CButton color="danger" onClick={()=>trashArticles(item)}>
+                      <CButton className="ml-2" color="danger" onClick={()=>trashArticles(item)}>
                         <CIcon name="cil-trash" />
                       </CButton>
                     </td>
