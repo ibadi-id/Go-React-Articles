@@ -5,10 +5,10 @@ Ini adalah aplikasi sederhana dengan menerapkan <strong>golang</strong> sebagai 
 
 Screenshot :
 
-![Alt text](./screeshot/home.png?raw=true "Title")
-![Alt text](./screeshot/allposts.png?raw=true "Title")
-![Alt text](./screeshot/addpost.png?raw=true "Title")
-![Alt text](./screeshot/preview.png?raw=true "Title")
+![Alt text](./screenshot/home.png?raw=true "home")
+![Alt text](./screenshot/allposts.png?raw=true "allposts")
+![Alt text](./screenshot/addpost.png?raw=true "addpost")
+![Alt text](./screenshot/preview.png?raw=true "preview")
 
 ## Table of Contents
 
