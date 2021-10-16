@@ -3,6 +3,13 @@
 
 Ini adalah aplikasi sederhana dengan menerapkan <strong>golang</strong> sebagai backend dan <strong>react</strong> sebagai frontend</p>
 
+Screenshot :
+
+![Alt text](./screeshoot/home.png?raw=true "Title")
+![Alt text](./screeshoot/allposts.png?raw=true "Title")
+![Alt text](./screeshoot/addpost.png?raw=true "Title")
+![Alt text](./screeshoot/preview.png?raw=true "Title")
+
 ## Table of Contents
 
 * [Installation](#installation)
