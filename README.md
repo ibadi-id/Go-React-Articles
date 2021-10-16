@@ -1,5 +1,5 @@
 
-# CRUD Article Menggunakan CoreUI Free React Admin Template v3 + GO Sebagai backend Rest API
+# CRUD React + GO Rest API
 
 Ini adalah aplikasi sederhana dengan menerapkan <strong>golang</strong> sebagai backend dan <strong>react</strong> sebagai frontend</p>
 
