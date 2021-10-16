@@ -18,13 +18,13 @@ CREATE TABLE IF NOT EXISTS `posts`  (
 -- ----------------------------
 
 INSERT INTO posts (id,title,content,category,status) VALUES
-(1,'Article 1','Contrary to popular belief, Lorem Ipsum is not simply random text','berita', 'Publish'),
-(2,'Article 2','Contrary to popular belief, Lorem Ipsum is not simply random text','olahraga', 'Publish'),
-(3,'Article 3','Contrary to popular belief, Lorem Ipsum is not simply random text','berita', 'Publish'),
-(4,'Article 4','Contrary to popular belief, Lorem Ipsum is not simply random text','kesehatan', 'Publish'),
-(5,'Article 5','Contrary to popular belief, Lorem Ipsum is not simply random text','hobi', 'Publish'),
-(6,'Article 6','Contrary to popular belief, Lorem Ipsum is not simply random text','automotif', 'Publish'),
-(7,'Article 7','Contrary to popular belief, Lorem Ipsum is not simply random text','kesehatan', 'Publish'),
-(8,'Article 8','Contrary to popular belief, Lorem Ipsum is not simply random text','hobi', 'Draft'),
-(9,'Article 9','Contrary to popular belief, Lorem Ipsum is not simply random text','berita', 'Trash'),
-(10,'Article 10','Contrary to popular belief, Lorem Ipsum is not simply random text','kesehatan', 'Draft');
+(1,'Artikel dengan urutan 1','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','berita', 'Publish'),
+(2,'Artikel dengan urutan 2','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','olahraga', 'Publish'),
+(3,'Artikel dengan urutan 3','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','berita', 'Publish'),
+(4,'Artikel dengan urutan 4','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','kesehatan', 'Publish'),
+(5,'Artikel dengan urutan 5','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','hobi', 'Publish'),
+(6,'Artikel dengan urutan 6','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','automotif', 'Publish'),
+(7,'Artikel dengan urutan 7','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','kesehatan', 'Publish'),
+(8,'Artikel dengan urutan 8','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','hobi', 'Draft'),
+(9,'Artikel dengan urutan 9','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','berita', 'Trash'),
+(10,'Artikel dengan urutan 10','Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi utul.','kesehatan', 'Draft');

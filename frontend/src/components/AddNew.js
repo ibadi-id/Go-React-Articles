@@ -63,7 +63,7 @@ function AddNew() {
                 onSubmit={handleSubmit} noValidate>
               <CFormGroup>
                 <CLabel htmlFor="title">Title</CLabel>
-                <CInput id="title" placeholder="Input Title" maxLength="200" onChange={(e)=>setTitle(e.target.value)} required/>
+                <CInput id="title" placeholder="Input Title" minLength="20" maxLength="200" onChange={(e)=>setTitle(e.target.value)} required/>
               </CFormGroup>
               <CFormGroup>
                 <CLabel htmlFor="content">Content</CLabel>
@@ -75,11 +75,12 @@ function AddNew() {
                       placeholder="Input Content..." 
                       value={content} onChange={(e)=>setContent(e.target.value)}
                       required
+                      minLength="200"
                     />
               </CFormGroup>
               <CFormGroup>
                 <CLabel htmlFor="category">Category</CLabel>
-                <CInput id="category" placeholder="Input Category" maxLength="100" value={category} onChange={(e)=>setCategory(e.target.value)} required/>
+                <CInput id="category" placeholder="Input Category" minLength="3" maxLength="100" value={category} onChange={(e)=>setCategory(e.target.value)} required/>
               </CFormGroup>
               <CButton color="primary" type="submit" onClick={()=>setStatus("Draft")}>
                 Draft

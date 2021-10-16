@@ -8,7 +8,7 @@ const EditPost = React.lazy(() => import('./components/EditPost'));
 
 
 const routes = [
-  { path: '/', exact: true, name: 'Home', component: Welcome, exact: true },
+  { path: '/', exact: true, name: 'Home', component: Welcome},
   { path: '/preview', name: 'Preview', component: Preview, exact: true },
   { path: '/allposts', name: 'All Posts', component: AllPosts, exact: true },
   { path: '/addnew', name: 'Add New Post', component: AddNew, exact: true },
